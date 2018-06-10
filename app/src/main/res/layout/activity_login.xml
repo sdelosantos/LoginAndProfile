@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:padding="25dp"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="143dp"
+        android:layout_marginTop="55dp"
+        android:src="@drawable/login"
+        app:srcCompat="@drawable/login" />
+
+    <EditText
+        android:id="@+id/UserEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/image"
+        android:layout_marginTop="5dp"
+        android:hint="Email"
+        android:textColor="#6b6b6b"
+        android:textColorHighlight="#6b6b6b"
+        android:textColorHint="#6b6b6b"
+        android:padding="5dp"
+        android:textSize="20dp" />
+    <EditText
+        android:id="@+id/UserPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/image"
+        android:layout_marginTop="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#6b6b6b"
+        android:textColorHighlight="#6b6b6b"
+        android:textColorHint="#6b6b6b"
+        android:padding="5dp"
+        android:textSize="20dp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f1604d"
+        android:layout_marginTop="25dp"
+        android:textSize="22dp"
+        android:onClick="btnLogin_Click"
+        android:textColorHint="#fff"
+        android:hint="Login"
+        android:textAlignment="center"/>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="5dp"
+        android:textColor="#5d5d5d"
+        android:text="Remember Me" />
+
+</LinearLayout>
